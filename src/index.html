@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 11</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
-    <load src="./partials/footer.html" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+<body>
+
+
+  <form class="search-form">
+
+    <input type="text" class="search-input" placeholder="Search images..." required>
+
+    <button type="submit" class="search-button">Search</button>
+  </form>
+
+
+
+  <!-- відображ. галереї -->
+  <div id="gallery" class="gallery"></div>
+
+  <button type="button" class="load-more hidden">Load more</button>
+
+  <!-- індикатор завантаження -->
+  <div class="loader hidden"></div>
+  <div class="backdrop hidden"></div>
+
+
+  <script type="module" src="./main.js"></script>
+  <!-- <script type="module" src="./js/pixabay-api.js"></script>
+  <script type="module" src="./js/render-functions.js"></script> -->
+
+
+</body>
+
 </html>
