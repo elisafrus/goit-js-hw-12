@@ -6,7 +6,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const gallery = document.querySelector('.gallery');
 const lightbox = new SimpleLightbox('.gallery a', {});
 
-// відображення картинок---------------------------------------------------------------------
+// відображення картинок----------------------------------------------------------------------
 export const renderImages = images => {
   const markup = images
     .map(
@@ -22,7 +22,7 @@ export const renderImages = images => {
       <div class='card'>
       <a class="card-item" href="${largeImageURL}">
         <img class="card-image" src="${webformatURL}" alt="${tags}" loading="lazy" />
-        
+
         <div class="card-info">
           <p><b>Likes:</b> ${likes}</p>
           <p><b>Views:</b> ${views}</p>
